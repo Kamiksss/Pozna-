@@ -45,15 +45,32 @@ body {
   text-decoration: none;
 }
 #footer {
-  width: 100%;
+  background-color: #ffffff;
+  width: 95%;
   height: 25px;
   border: 1px solid #000;
   float: left;
   position: fixed;
+  margin-left: 20px;
   left: 0;
   bottom: 0;
 }
 #footer h6 {
   text-align: center;
   margin: auto;
+}
+
+.info div {
+  float: left;
+  margin-right: 70px;
+  border: 2px solid #000;
+  width: 250px;
+  height: 250px;
+}
+
+#nrTel {
+  text-align: center;
+}
+#email {
+  padding: 10%;
 }
