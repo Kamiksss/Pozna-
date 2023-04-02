@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
-    <title>Logowanie</title>
+    <script src="../scripts/gallerybutton.js"></script>
+    <title>Galeria</title>
   </head>
   <body>
     <div id="container">
@@ -21,6 +22,16 @@
             <li><a href="./zabytki.html">Zabytki </a></li>
             <li><a href="./Login.html">Logowanie</a></li>
           </ul>
+        </div>
+        <div id="Galeria">
+          <h1 id="Galeria_wprowadzenie">Zdjęcia poznania</h1>
+          <img
+            id="galleryIMG"
+            src="../img/index/1.png"
+            alt="Pierwsze zdjęcie"
+          /><br />
+          <button onclick="galleryPrev()">Poprzednie zdjęcie</button>
+          <button onclick="galleryNext()">Następne zdjęcie</button>
         </div>
       </div>
     </div>
