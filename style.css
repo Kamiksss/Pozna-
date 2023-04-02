@@ -86,3 +86,23 @@ body {
 #email {
   padding: 30px;
 }
+
+#loginPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  border: solid 5px;
+  margin-top: 50px;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-bottom: 5%;
+}
+
+#loginPanel p {
+  text-align: center;
+}
+
+#loginPanel div {
+  margin: 5px;
+}
