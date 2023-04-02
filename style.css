@@ -8,7 +8,7 @@ body {
   height: 150px;
   background-position: center;
   background-size: cover;
-  background-image: url("./pic/header.jpg");
+  background-image: url("./img/header.jpg");
 }
 #header h1 {
   margin: auto;
@@ -68,9 +68,21 @@ body {
   height: 250px;
 }
 
+#Galeria img {
+  display: block;
+  margin: 0 auto;
+}
+#Galeria button {
+  display: block;
+  margin: 0 auto;
+}
+#Galeria_wprowadzenie {
+  text-align: center;
+}
+
 #nrTel {
   text-align: center;
 }
 #email {
-  padding: 10%;
+  padding: 30px;
 }

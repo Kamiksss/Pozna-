@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/gallerybutton.js"></script>
     <title>Poznań | Strona główna</title>
   </head>
   <body>
@@ -18,8 +19,18 @@
             <li><a href="index.html">Strona Główna</a></li>
             <li><a href="./podstrony/aktualnosci.html">Aktualności</a></li>
             <li><a href="./podstrony/zabytki.html">Zabytki </a></li>
-            <li><a href="./podstrony/kontakt.html">Kontakt</a></li>
+            <li><a href="./podstrony/Login.html">Logowanie</a></li>
           </ul>
+        </div>
+        <div id="Galeria">
+          <h1 id="Galeria_wprowadzenie">Zdjęcia poznania</h1>
+          <img
+            id="galleryIMG"
+            src="./img/index/1.png"
+            alt="Pierwsze zdjęcie"
+          /><br />
+          <button onclick="galleryPrev()">Poprzednie zdjęcie</button>
+          <button onclick="galleryNext()">Następne zdjęcie</button>
         </div>
       </div>
     </div>
