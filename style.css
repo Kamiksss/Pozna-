@@ -102,3 +102,21 @@ body {
 .next-btn:active {
   transform: translateY(-50%) scale(0.9);
 }
+
+.aktualnosci_container {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.aktualnosci_container p {
+  font-size: 16px;
+  line-height: 0.01;
+  margin-bottom: 0;
+  margin-top: auto;
+}
