@@ -1,22 +1,23 @@
 var displayed = 1;
-const imgQuantity = 3;
+const imgQuantity = 20;
 
 galleryNext = () => {
   myImage = document.getElementById("galleryIMG");
-  myImage.src = `../img/index/${displayed + 1}.png`;
+  myImage.src = `../img/gallery/gallery (${displayed + 1}).jpg`;
   displayed += 1;
   if (displayed > imgQuantity) {
-    myImage.src = "../img/index/1.png";
+    myImage.src = "../img/gallery/gallery (1).JPG";
     displayed = 1;
   }
+  console.log(displayed);
 };
 
 galleryPrev = () => {
   myImage = document.getElementById("galleryIMG");
-  myImage.src = `../img/index/${displayed - 1}.png`;
+  myImage.src = `../img/gallery/${displayed - 1}.png`;
   displayed -= 1;
   if (displayed < 1) {
-    myImage.src = `../img/index/${imgQuantity}.png`;
+    myImage.src = `../img/gallery/${imgQuantity}.png`;
     displayed = imgQuantity;
   }
 };
