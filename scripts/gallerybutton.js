@@ -1,5 +1,5 @@
 var displayed = 1;
-const imgQuantity = 20;
+const imgQuantity = 17;
 
 galleryNext = () => {
   myImage = document.getElementById("galleryIMG");
@@ -14,10 +14,10 @@ galleryNext = () => {
 
 galleryPrev = () => {
   myImage = document.getElementById("galleryIMG");
-  myImage.src = `../img/gallery/${displayed - 1}.png`;
+  myImage.src = `../img/gallery/gallery (${displayed - 1}).jpg`;
   displayed -= 1;
   if (displayed < 1) {
-    myImage.src = `../img/gallery/${imgQuantity}.png`;
+    myImage.src = `../img/gallery/gallery (${imgQuantity}).jpg`;
     displayed = imgQuantity;
   }
 };

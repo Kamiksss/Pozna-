@@ -44,21 +44,6 @@ body {
   color: #000;
   text-decoration: none;
 }
-#footer {
-  background-color: #ffffff;
-  width: 95%;
-  height: 25px;
-  border: 1px solid #000;
-  float: left;
-  position: fixed;
-
-  left: 0;
-  bottom: 0;
-}
-#footer h6 {
-  text-align: center;
-  margin: auto;
-}
 
 .info div {
   float: left;
@@ -67,25 +52,18 @@ body {
   width: 250px;
   height: 250px;
 }
-
 #Galeria {
-  max-width: 100%;
-  height: 500;
-  display: block;
-  margin: 0 auto;
-}
-#Galeria button {
-  display: block;
-  margin: 0 auto;
+  position: relative;
 }
 #Galeria_wprowadzenie {
   text-align: center;
 }
 #Galeria_container {
-  width: 950px;
-  height: 700px;
-  margin-left: 23%;
-
+  display: block;
+  padding: 5px;
+  width: 80%;
+  height: 750px;
+  margin: 0 auto;
   border: solid #000;
 }
 #Galeria_container img {
@@ -93,29 +71,34 @@ body {
   height: 100%;
   object-fit: contain;
 }
-#nrTel {
-  text-align: center;
-}
-#email {
-  padding: 30px;
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-#loginPanel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  border: solid 5px;
-  margin-top: 50px;
-  margin-left: 35%;
-  margin-right: 35%;
-  padding-bottom: 5%;
+.prev-btn {
+  left: 0;
 }
 
-#loginPanel p {
-  text-align: center;
+.next-btn {
+  right: 0;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-#loginPanel div {
-  margin: 5px;
+.prev-btn:active,
+.next-btn:active {
+  transform: translateY(-50%) scale(0.9);
 }
