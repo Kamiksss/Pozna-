@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/clickListener.js" defer></script>
     <title>Poznań | Strona główna</title>
   </head>
   <body>
@@ -22,8 +23,46 @@
             <li><a href="./podstrony/Login.html"></a></li>
           </ul>
         </div>
-        <div id="main">
-          <h1 style="text-align: center; color: blueviolet">Coming Soon</h1>
+        <div class="index-main">
+          <div class="index-container" id="historia">
+            <span>HISTORIA POZNANIA</span>
+          </div>
+          <div class="index-container" id="wspolczesnosc">
+            <span>POZNAŃ WSPÓŁCZEŚNIE</span>
+          </div>
+          <div class="index-container" id="gwara">
+            <span>GWARA POZNAŃSKA</span>
+          </div>
+          <div id="historia-popup" class="popup">
+            <div class="popupContent">
+              <div class="header">
+                <button class="closePopup">Zamknij</button>
+              </div>
+              <div class="popupMain">
+                <p>Historia magistra vitae</p>
+              </div>
+            </div>
+          </div>
+          <div id="wspolczesnosc-popup" class="popup">
+            <div class="popupContent">
+              <div class="header">
+                <button class="closePopup">Zamknij</button>
+              </div>
+              <div class="popupMain">
+                <p>wspolczesnosc</p>
+              </div>
+            </div>
+          </div>
+          <div class="popup gwaraPopup">
+            <div class="popupContent">
+              <div class="header">
+                <button class="closePopup">Zamknij</button>
+              </div>
+              <div class="popupMain">
+                <p>Gwara</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
