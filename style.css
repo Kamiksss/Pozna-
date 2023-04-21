@@ -1,20 +1,27 @@
 body {
   margin: 0;
   padding: 0;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    189deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(0, 209, 255, 1) 93%
+  );
+  background-attachment: fixed; /*edit*/
 }
 
 #header {
   top: 0;
   height: 150px;
-  background-position: center;
-  background-size: cover;
-  background-image: url("./img/header.jpg");
+  background-image: url(./img/warta.png);
 }
 #header h1 {
   margin: auto;
   text-align: center;
   padding-top: 30px;
   color: antiquewhite;
+  font-size: 60px;
 }
 #nav {
   background-color: #000;
@@ -64,7 +71,6 @@ body {
   width: 80%;
   height: 750px;
   margin: 0 auto;
-  border: solid #fff;
 }
 #Galeria_container img {
   width: 100%;
@@ -131,6 +137,13 @@ body {
 }
 
 .zabytek {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin-right: 0;
+  justify-items: center;
+  justify-content: center;
+  width: 200vh;
   font-size: large;
   display: flex;
   align-items: center;
@@ -139,6 +152,7 @@ body {
 
 .container {
   margin: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -162,11 +176,15 @@ body {
   margin: 30px;
   width: 600px;
   height: 300px;
-  border: dotted #00fff0;
+  border: solid white;
+}
+
+.index-container:hover {
+  border: solid black;
 }
 
 .index-container span {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   color: white;
   font-size: 45px;
 }
@@ -181,7 +199,7 @@ body {
 }
 
 #gwara {
-  background-image: url("/img/index/wspl.jpg");
+  background-image: url("/img/index/gwara.jpg");
 }
 
 .popup {
@@ -195,6 +213,8 @@ body {
   z-index: 9999;
 }
 .popupContent {
+  width: 70%;
+  height: 70%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -203,4 +223,33 @@ body {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.closePopup {
+  background-color: #000;
+  color: white;
+  border-radius: 90%;
+  cursor: pointer;
+}
+
+.popupHeader {
+  display: flex;
+  justify-content: right;
+}
+
+.popupMain {
+  display: flex;
+  padding: 20px;
+}
+
+.popupMain img {
+  margin-right: 10px;
+  margin-top: 20px;
+  width: 550px;
+  height: 600px;
+}
+
+.popupMain p {
+  margin-top: 7%;
+  font-size: 20px;
 }
