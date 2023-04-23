@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <script src="../scripts/gallerybutton.js"></script>
-    <title>Poznań | Galeria</title>
-  </head>
-  <body>
-    <div id="container">
-      <div id="header">
-        <h1>Moje Miasto Poznań</h1>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../scripts/gallerybutton.js"></script>
+  <title>Poznań | Galeria</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>Moje Miasto Poznań</h1>
+    </div>
+    <div id="main-content">
+      <div id="nav">
+        <ul>
+          <li><a href="../index.html">Strona Główna</a></li>
+          <li><a href="./aktualnosci.html">Aktualności</a></li>
+          <li><a href="./galeria.html">Galeria</a></li>
+          <li><a href="./zabytki.html">Zabytki</a></li>
+        </ul>
       </div>
-      <div id="main-content">
-        <div id="nav">
-          <ul>
-            <li><a href="../index.html">Strona Główna</a></li>
-            <li><a href="./aktualnosci.html">Aktualności</a></li>
-            <li><a href="./galeria.html">Galeria</a></li>
-            <li><a href="./zabytki.html">Zabytki </a></li>
-          </ul>
+      <div id="Galeria">
+        <h1 id="Galeria_wprowadzenie">Zdjęcia Poznania</h1>
+        <div id="Galeria_container">
+          <img id="galleryIMG" src="../img/gallery/gallery(1).jpg" alt="Pierwsze zdjęcie"><br>
         </div>
-        <div id="Galeria">
-          <h1 id="Galeria_wprowadzenie">Zdjęcia Poznania</h1>
-          <div id="Galeria_container">
-            <img
-              id="galleryIMG"
-              src="../img/gallery/gallery (1).jpg"
-              alt="Pierwsze zdjęcie"
-            /><br />
-          </div>
-          <button onclick="galleryPrev()" class="prev-btn">&#8249;</button>
-          <button onclick="galleryNext()" class="next-btn">&#8250;</button>
+        <button onclick="galleryPrev()" class="prev-btn">&#8249;</button>
+        <button onclick="galleryNext()" class="next-btn">&#8250;</button>
+      </div>
+      <div class="film">
+        <div class="film-text">
+          <h1>Film z ujęciami Poznania</h1>
         </div>
-        <div class="film">
-          <div class="film-text">
-            <h1>Film z ujęciami Poznania</h1>
-          </div>
-          <div class="film-content">
-            <video src="../img/gallery/walking.mp4" controls></video>
-          </div>
+        <div class="film-content">
+          <video src="../img/gallery/walking.mp4" controls></video>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
