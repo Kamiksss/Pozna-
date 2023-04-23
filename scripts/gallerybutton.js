@@ -1,5 +1,5 @@
 var displayed = 1;
-const imgQuantity = 38;
+const imgQuantity = 35;
 
 galleryNext = () => {
   myImage = document.getElementById("galleryIMG");
