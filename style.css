@@ -110,6 +110,7 @@ body {
 }
 
 .aktualnosci_container {
+  cursor: pointer;
   background-color: #f2f2f2;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -252,4 +253,9 @@ body {
 .popupMain p {
   margin-top: 7%;
   font-size: 20px;
+}
+
+#smallerHistoria {
+  margin-top: 1%;
+  font-size: 16.5px;
 }
